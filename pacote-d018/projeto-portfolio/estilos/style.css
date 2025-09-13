@@ -35,7 +35,7 @@ header {
   color: var(--text);
   padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;  
   align-content: center;
 }
 
@@ -57,4 +57,56 @@ nav#menu a {
 nav#menu a:hover {
   background-color: var(--reverse-draft);
   color: var(--draft);
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+section#ficha {
+  background-color: var(--card-fund);
+  padding: 20px;
+  border-radius: 5px;
+  grid-column: 2;
+}
+
+section#ficha img.foto {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid var(--card-fund);
+  outline: 5px solid var(--draft);
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+section#ficha h1 {
+  color: var(--draft);
+  margin: 15px 0px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+div#social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  gap: 0.5em;
+  margin-top: 15px;
+}
+
+div#social a {
+  color: var(--draft);
+  transition: color 0.5s;
+}
+
+div#social a:hover {
+  color: var(--reverse-draft);
 }
