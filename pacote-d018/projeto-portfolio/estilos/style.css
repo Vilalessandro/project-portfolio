@@ -124,7 +124,7 @@ article {
 
 article h2{
   color: var(--draft);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #details > article>  h2 > i {
@@ -181,6 +181,41 @@ article h2{
   height: 100%;
   background-color: var(--reverse-draft);
   border-radius: 4px;
+}
+
+#graduation-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#graduation-container .curso {
+  background-color: var(--main-fund);
+  border-radius: 8px;
+  border-left: 5px solid var(--reverse-draft) ;
+  padding-left: 15px;
+  transition: border-width 0.5s, border-color 0.5s;
+}
+
+#graduation-container .curso:hover {
+  border-left-width: 10px;
+  border-color: var(--draft);
+  cursor: pointer;
+}
+
+#graduation-container .periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--text);
+}
+
+#graduation-container .instituicao {
+  color: var(--reverse-draft);
+  font-size: 1.1em;
+}
+
+#graduation-container .instituicao:hover {
+  color: var(--draft);
 }
 
 @media screen and (min-width: 768px){
