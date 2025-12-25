@@ -23,11 +23,21 @@
   --card-fund: #ffffff;
 }
 
+body.dark {
+  --main-fund: #222222;
+  --text: #e0e0e0;
+  --reverse-text: #333333;
+  --draft: #ff5522;
+  --reverse-draft: #a73917;
+  --card-fund: #444444;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5em;
   background-color: var(--main-fund);
   color: var(--text);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 header {
